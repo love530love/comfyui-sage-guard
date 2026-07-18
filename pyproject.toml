@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-sage-guard"
+description = "Non-invasive SageAttention compatibility guard for ComfyUI. Auto-detects GQA, non-standard head_dim, and complex attention masks, falling back to native PyTorch SDPA without modifying ComfyUI core or virtual environment packages."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = ["torch"]
+
+[project.urls]
+Repository = "https://github.com/love530love/comfyui-sage-guard"
+
+[tool.comfy]
+PublisherId = "love530love"
+DisplayName = "SageAttention Guard"
+Icon = "🛡️"
